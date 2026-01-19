@@ -3,109 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neona Foundation</title>
+    <title>NEONA Foundation</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Add any font imports here (Google Fonts, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Header/Navigation -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="Neona Foundation Logo">
+                <img src="media/logo.png" alt="NEONA Foundation Logo">
             </div>
             <nav class="nav">
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#programs">Programs</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#impact">Impact</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
-            <div class="donate-btn">
-                <a href="#donate" class="btn">Donate</a>
-            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Empowering Lives Through Compassion</h1>
-                <p>Join us in making a difference for children and families in need</p>
+                <h1>Empowering Communities By Improving standard of living</h1>
+                <p>Join us in our mission to create sustainable change through innovative educational programs.</p>
                 <div class="hero-buttons">
-                    <a href="#donate" class="btn">Donate Now</a>
-                    <a href="#volunteer" class="btn secondary">Volunteer</a>
+                    <a href="#programs" class="btn btn-primary">Our Programs</a>
+                    <a href="#contact" class="btn btn-secondary">Get Involved</a>
                 </div>
+            </div>
+            <div class="hero-image">
+                <img src="media/children_3.JPG" alt="Children learning">
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section id="about" class="about">
         <div class="container">
-            <div class="about-content">
-                <h2>About Neona Foundation</h2>
-                <p>The Neona Foundation is dedicated to improving the lives of underprivileged children and families through education, healthcare, and community support programs.</p>
-                <!-- Add more content as shown in your Canva design -->
-            </div>
             <div class="about-image">
-                <img src="images/about-image.jpg" alt="About Neona Foundation">
+                <img src="media/logo.png" alt="About NEONA Foundation">
+            </div>
+            <div class="about-content">
+                <h2>About NEONA Foundation</h2>
+                <p>Founded in 2015, NEONA Foundation is a non-profit organization dedicated to improving standarad of living in underserved communities Nation wide.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Communities Reached</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10,000+</h3>
+                        <p>Lives Impacted</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1</h3>
+                        <p>Countries</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Programs Section -->
-    <section class="programs" id="programs">
-        <div class="container">
-            <h2>Our Programs</h2>
-            <div class="programs-grid">
-                <!-- Repeat this for each program -->
-                <div class="program-card">
-                    <div class="program-icon">
-                        <img src="images/education-icon.png" alt="Education Program">
-                    </div>
-                    <h3>Education Support</h3>
-                    <p>Providing school supplies, scholarships, and learning resources to children in need.</p>
+<!-- Programs Section -->
+<section id="programs" class="programs">
+    <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+        <div class="programs-grid">
+            <!-- Emergency Relief Program -->
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-utensils"></i> <!-- Food icon -->
                 </div>
-                <!-- Add more program cards -->
+                <h3>Emergency Relief</h3>
+                <p>Providing meals, clothing, and urgent care to homeless children.</p>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+
+            <!-- Safe Shelter Program -->
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-home"></i> <!-- Shelter icon -->
+                </div>
+                <h3>Safe Shelter</h3>
+                <p>Secure housing with counseling and rehabilitation support.</p>
+                <a href="#" class="btn btn-outline">Learn More</a>
+            </div>
+
+            <!-- Skill Empowerment Program -->
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-hands-helping"></i> <!-- Empowerment icon -->
+                </div>
+                <h3>Skill Empowerment</h3>
+                <p>Vocational training in tech, arts, and trades for future independence.</p>
+                <a href="#" class="btn btn-outline">Learn More</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
         <div class="container">
-            <h2>Gallery</h2>
-            <div class="gallery-grid">
-                <!-- Add your gallery images -->
-                <div class="gallery-item">
-                    <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="impact-content">
+                <div class="impact-stories">
+                    <div class="story">
+                        <img src="media/children_1.JPG" alt="Success story">
+                        <h3>The Kids</h3>
+                        <p>Its making a difference one child at a time </p>
+                    </div>
+                    <div class="story">
+                        <img src="media/children_2.PNG" alt="Success story">
+                        <h3>Road Outreach</h3>
+                        <p>Showing Up makes the difference </p>
+                    </div>
                 </div>
-                <!-- Add more gallery items -->
+                <div class="impact-video">
+                    <div class="video-container">
+                        <iframe src="https://youtube.com/shorts/xhMz644b2L8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="contact-form">
-                <h2>Get In Touch</h2>
-                <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p><strong>Email:</strong> info@neonafoundation.org</p>
-                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-                <p><strong>Address:</strong> 123 Charity Street, Compassion City</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i>No 27 valentine i attah street Abuja Nigeria 
+Neona_Foundation</p>
+                    <p><i class="fas fa-phone"></i> +(234) 7061404555</p>
+                    <p><i class="fas fa-envelope"></i> Neonafoundation@gmail.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/neona_foundation?igsh=Y254cWl6bHRwMTA2&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+    <form action="https://formsubmit.co/Neonafoundation@gmail.com" method="POST">
+        <!-- FormSubmit Required Fields -->
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_template" value="table"> <!-- Optional styling -->
+        <input type="hidden" name="_captcha" value="false"> <!-- Disable CAPTCHA -->
+  <input type="hidden" name="_next" value="/thank-you.html"> 
+<!-- Leading "/" points to root folder -->
+
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
             </div>
         </div>
     </section>
@@ -115,33 +200,179 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/logo-white.png" alt="Neona Foundation Logo">
+                    <img src="media/logo.png" alt="NEONA Foundation Logo">
+                    <p>Empowering By mproving standard of living  since 2015.</p>
                 </div>
                 <div class="footer-links">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#programs">Programs</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#impact">Impact</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h3>Follow Us</h3>
-                    <div class="social-icons">
-                        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-                    </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Neona Foundation. All Rights Reserved.</p>
+                <p>&copy; 2023 NEONA Foundation. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+
+<!-- Brochure Modal HTML -->
+<div class="brochure-modal" id="brochureModal">
+  <div class="brochure-modal-content">
+    <span class="brochure-close">&times;</span>
+    <h2>Latest Programs - 2025 Brochure</h2>
+    <iframe src="Neona Foundation Program Brochure.pdf" frameborder="0" class="brochure-pdf"></iframe>
+  </div>
+</div>
+
+<!-- Brochure CTA Button -->
+<button class="brochure-cta" id="brochureCta">
+  📢 Just In: Latest Programs
+</button>
+
+<style>
+  /* Brochure Modal Styles - Isolated with class prefixes */
+  .brochure-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1100;
+    overflow: auto;
+  }
+  
+  .brochure-modal-content {
+    background-color: var(--bg-color);
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .brochure-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .brochure-close:hover {
+    color: var(--primary-color);
+  }
+  
+  .brochure-modal h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  .brochure-pdf {
+    width: 100%;
+    height: 70vh;
+    min-height: 400px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+  }
+  
+  .brochure-cta {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .brochure-cta:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 768px) {
+    .brochure-modal-content {
+      margin: 10% auto;
+      width: 95%;
+    }
+    
+    .brochure-pdf {
+      min-height: 300px;
+    }
+    
+    .brochure-cta {
+      bottom: 70px;
+      right: 10px;
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
+</style>
+
+<script>
+  // Brochure Modal JavaScript - Self-contained
+  (function() {
+    const modal = document.getElementById('brochureModal');
+    const cta = document.getElementById('brochureCta');
+    const closeBtn = document.querySelector('.brochure-close');
+    
+    // Open modal when CTA is clicked
+    cta.addEventListener('click', function() {
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden';
+    });
+    
+    // Close modal when X is clicked
+    closeBtn.addEventListener('click', function() {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    });
+    
+    // Close modal when clicking outside content
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+    
+    // Optional: Auto-show after delay (commented out by default)
+    // setTimeout(() => {
+    //   modal.style.display = 'block';
+    //   document.body.style.overflow = 'hidden';
+    // }, 5000);
+  })();
+</script>
 </body>
 </html>
